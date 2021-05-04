@@ -83,7 +83,7 @@ def cached_datasets(dataset_path=None, keys_only=True):
         return set(ds_dict.keys())
     return ds_dict
 
-def load_catalog(catalog_path=None, catalog_file='catalog.json', include_filename=False, keys_only=False):
+def load_catalog(catalog_path=None, catalog_file='catalog.json', include_filename=False, keys_only=True):
     """Get the set of available datasets from the catalog (nodes in the transformer graph).
 
     Parameters
